@@ -15,7 +15,7 @@ const Layout = ({ children, title="Country List"}) => {
       {/* Header section */}
       <header className={styles.main_header}>
         <PublicSharpIcon className={styles.main_header_icon} style={{fontSize: '35px', fontWeight: '800'}}/>
-        <Link href={`/`}>
+        <Link href={`/`} passHref>
           <h2 className={styles.main_header_heading}>Country<span>List</span></h2>
         </Link>
       </header>

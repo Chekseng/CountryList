@@ -93,7 +93,7 @@ const CountriesTable = ({ countries }) => {
       <article className={styles.countries_table_lower}>
         {
           orderedCountries.map((country) => (
-            <Link href={`/country/${country.alpha3Code}`} key={country.alpha3Code} className={styles.countries_lower_link}>
+            <Link href={`/country/${country.alpha3Code}`} key={country.alpha3Code} className={styles.countries_lower_link} passHref>
               <div key={country.alpha3Code}>
                 <p><img src={country.flag} alt="country-flag" /></p>
                 <p>{country.name}</p>
