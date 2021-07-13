@@ -1,16 +1,64 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,400;1,500;1,600;1,700&display=swap");
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+  --primary-text-color: rgb(242, 175, 15);
+  --secondary-text-color: rgb(155, 171, 187);
+  --tetiary-text-color: #ddd;
+  --quatenary-text-color: #444;
+  --quinary-text-color: #eee;
+  --primary-background: rgb(27, 41, 57);
+  --secondary-background: rgb(37, 54, 73);
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: var(--primary-background);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p,
+a,
+span,
+button,
+input,
+select,
+option,
+ul,
+li,
+table,
+td,
+tr,
+th,
+tbody,
+thead,
+label,
+textarea,
+::placeholder {
+  font-family: "Montserrat", sans-serif;
 }

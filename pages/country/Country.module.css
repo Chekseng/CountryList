@@ -1,0 +1,131 @@
+.main_detail_section {
+  display: grid;
+  width: 70%;
+  margin: 0 auto;
+  grid-template-columns: 40% 60%;
+  justify-content: space-between;
+  grid-gap: 0 20px;
+  align-items: start;
+  padding-bottom: 20px;
+}
+
+.detail_flag {
+  background-color: var(--secondary-background);
+  padding: 10px 10px 20px;
+  border-radius: 10px;
+}
+.detail_flag img {
+  width: 100%;
+}
+
+.detail_flag h3 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  color: var(--primary-text-color);
+}
+
+.detail_flag h4 {
+  text-align: center;
+  color: var(--secondary-text-color);
+  font-weight: 400;
+}
+
+.detail_flag div p {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.detail_flag div p:first-child {
+  font-weight: bold;
+  color: var(--secondary-text-color);
+}
+
+/* Detail Info */
+.detail_info {
+  background-color: var(--secondary-background);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.detail_info h3 {
+  color: var(--primary-text-color);
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 10px 0 10px;
+}
+
+.detail_info table {
+  width: 100%;
+}
+
+.detail_info table tbody tr {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 18px;
+  border-bottom: 1px solid var(--quinary-text-color);
+}
+
+.detail_info table tbody tr td:first-child {
+  color: var(--secondary-text-color);
+  font-weight: bold;
+}
+
+.detail_info table tbody tr td:last-child {
+  color: var(--quinary-text-color);
+}
+
+/* Bordering Countries */
+.detail_neighbouring_countries {
+  display: grid;
+}
+
+.detail_neighbouring_countries h4 {
+  color: var(--primary-text-color);
+  font-size: 18px;
+  padding: 20px 0 10px;
+}
+
+.detail_neighbouring_countries article {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 20px;
+}
+
+.detail_neighbouring_countries article img {
+  width: 100%;
+}
+
+.detail_neighbouring_countries article div p {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--secondary-text-color);
+}
+
+@media screen and (max-width: 900px) {
+  .main_detail_section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main_detail_section {
+    grid-template-columns: 100%;
+    grid-gap: 20px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .detail_neighbouring_countries article {
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    grid-gap: 10px 0;
+  }
+}
