@@ -1,5 +1,6 @@
 import Layout from "../../components/Layout/Layout";
 import styles from './Country.module.css'
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
 const getCountry = async (id) => {
@@ -123,7 +124,7 @@ const Detail = ({ country }) => {
                 {
                   borders.map(({flag,name}) => (
                     <div key={name}>
-                      <img src={flag} alt="bordering-country-flag" />
+                      <Image src={flag} alt="bordering-country-flag" />
                       <p>{name}</p>
                     </div>
                   ))

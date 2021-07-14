@@ -1,5 +1,6 @@
 import styles from './CountriesTable.module.css'
 import { useState } from 'react'
+import Image from 'next/image'
 import {
   KeyboardArrowDownRounded,
   KeyboardArrowUpRounded
@@ -95,7 +96,7 @@ const CountriesTable = ({ countries }) => {
           orderedCountries.map((country) => (
             <Link href={`/country/${country.alpha3Code}`} key={country.alpha3Code} className={styles.countries_lower_link} passHref>
               <div key={country.alpha3Code}>
-                <p><img src={country.flag} alt="country-flag" /></p>
+                <p><Image src={country.flag} alt="country-flag" /></p>
                 <p>{country.name}</p>
                 <p>{country.capital}</p>
                 <p>{country.region}</p>
