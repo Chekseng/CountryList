@@ -57,13 +57,13 @@ const Detail = ({ country }) => {
 
   useEffect(() => {
     getBorders();
-  }, [])
+  }, [getBorders])
 
   return ( 
     <Layout>
       <section className={styles.main_detail_section}>
         <article className={styles.detail_flag}>
-          <img src={country.flag} />
+          <Image src={country.flag} alt="detail flag" />
           <h3>{country.name}</h3>
           <h4>{country.region}</h4>
 
