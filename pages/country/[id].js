@@ -1,6 +1,6 @@
 import Layout from "../../components/Layout/Layout";
 import styles from './Country.module.css'
-import Image from 'next/Image'
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
 const getCountry = async (id) => {
@@ -63,7 +63,7 @@ const Detail = ({ country }) => {
     <Layout>
       <section className={styles.main_detail_section}>
         <article className={styles.detail_flag}>
-          <img src={country.flag} alt={country.name} />
+          <Image src={country.flag} alt={country.name} height={400} width={500} />
           <h3>{country.name}</h3>
           <h4>{country.region}</h4>
 
@@ -124,7 +124,7 @@ const Detail = ({ country }) => {
                 {
                   borders.map(({flag,name}) => (
                     <div key={name}>
-                      <img src={flag} alt={name} />
+                      <Image src={flag} alt={name} height={100} width={150} />
                       <p>{name}</p>
                     </div>
                   ))

@@ -36,7 +36,7 @@
   padding: 20px 0;
 }
 
-.countries_table_lower div {
+.countries_table_lower .country_table_inner {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   text-align: center;
@@ -56,8 +56,8 @@
   transition: all ease 0.5s;
 }
 
-.countries_table_lower div p:first-child img {
-  width: 60px;
+.country_flag {
+  border-radius: 0;
 }
 
 @media screen and (max-width: 1000px) {
