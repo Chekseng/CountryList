@@ -57,7 +57,7 @@ const Detail = ({ country }) => {
 
   useEffect(() => {
     getBorders();
-  },[])
+  })
 
   return ( 
     <Layout>
