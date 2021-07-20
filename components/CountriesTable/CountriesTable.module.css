@@ -71,13 +71,13 @@
 }
 
 @media screen and (max-width: 500px) {
-  .countries_table_lower div p:first-child,
+  .countries_table_lower .country_table_inner p:first-child,
   .countries_table_upper div:first-child {
     display: none;
     text-align: center;
   }
 
-  .countries_table_lower div,
+  .countries_table_lower .country_table_inner,
   .countries_table_upper {
     grid-template-columns: 25% 25% 25% 25%;
   }
