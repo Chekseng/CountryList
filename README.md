@@ -1,4 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# COUNTRYLIST
+
+---
+
+### OVERVIEW
+Countrylist is a next.js application that provides information about different country details using the restcountries.eu api.
+
+### FEATURES
+- next.js
+- restcountries apit
+- react.js
+- css
+- getStaticProps
+- getStaticPaths
+- getServerSideProps
+
+### HOW TO USE
+
+- download or clone source code from github repository
+- in your terminal
+
+```
+run npm install or yarn install
+```
+
+```
+yarn dev or npm run dev
+````
+
+- head over to you browser and open localhost:3000
+- viola! enjoy the app.
+
+
 
 ## Getting Started
 
